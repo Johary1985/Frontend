@@ -1,0 +1,31 @@
+<div class="container card ">
+    <form class="p-2 " (ngSubmit)="addPoke()">
+        <div class="form-group">
+            <label for="exampleInputPassword1">ID</label>
+            <input name="nombre" [(ngModel)]="poke.id" type="text" class="form-control" placeholder="Inserir IDE">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Nome</label>
+            <input name="apellido" [(ngModel)]="poke.nome" type="text" class="form-control" placeholder="Inserir Nome">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Area</label>
+            <input name="direccion" [(ngModel)]="poke.area" type="text" class="form-control" placeholder="Inserir Area de Trabalho">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">Local</label>
+            <input name="direccion" [(ngModel)]="poke.local" type="text" class="form-control" placeholder="Inserir Endereco">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">Imagen</label>
+            <input name="direccion" [(ngModel)]="poke.image" type="text" class="form-control" placeholder="Inserir Link da Foto">
+        </div>
+
+        <div>
+            <button class="btn waves-effect waves-light blue btn-small" (click)="addPoke()">Agregar</button>
+        </div>
+
+    </form>
+</div>

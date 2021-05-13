@@ -1,0 +1,23 @@
+<header> 
+    <h1 class="text-center" >Lista de Usuarios</h1>
+</header>
+<div class="col text-center">
+    
+<button (click)= "getDataApi()" type="button" class="btn btn-success">Get Usuarios</button>
+
+</div>
+
+<br>
+
+<div>
+    
+<ul *ngFor="let user of usuarios">
+
+    <li class="list-group-item list-group-item-success">ID: {{ user.id }}</li>
+    <li class="list-group-item list-group-item-success">Nome: {{user.nome}}</li>
+    <li class="list-group-item list-group-item-success">User: {{user.area}}</li>
+    <li class="list-group-item list-group-item-success">Email: {{user.local}}</li>
+  
+</ul>
+</div>
+
